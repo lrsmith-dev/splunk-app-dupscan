@@ -1,0 +1,23 @@
+version: '3.6'
+
+services:
+    splunk:
+        image: "splunk/splunk:latest"
+        container_name: splunk-dupscan-app
+        environment:
+            - SPLUNK_START_ARGS=--accept-license
+            - SPLUNK_PASSWORD=changed!
+        ports:
+            - "8000:8000"
+            - "8088:8088"
+            - "8089:8089"
+        volumes:
+            # Custom search commands app
+            - ./dupscan_app:/opt/splunk/etc/apps/dupscan_app
+            - ./lib/splunklib:/opt/splunk/etc/apps/dupscan_app/lib/splunklib
+
+        healthcheck:
+            test: ['CMD', 'curl', '-f', 'http://localhost:8000']
+            interval: 5s
+            timeout: 5s
+            retries: 20
