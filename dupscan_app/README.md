@@ -1,7 +1,7 @@
 splunk-sdk-python dupscan_app example
 ========================================
 
-Streaming commands process search results one-by-one and tokenizes each line and looks for duplicate tokens.
+Streaming commands that processes search results one-by-one and tokenizes each line and looks for duplicate tokens.
 
 This app is a modified verions of an example of Streaming Custom search commands which will returns events with a one new field 'fahrenheit'.
 

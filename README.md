@@ -3,8 +3,10 @@ identify duplicate fields and sub-strings in a single Splunk line.
 
 ## Setup
 
+```
 pip install -r requirements.txt -t lib --upgrade
 docker compose up
+```
 
 References
 * https://github.com/splunk/splunk-app-examples/tree/master
