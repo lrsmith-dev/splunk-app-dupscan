@@ -10,3 +10,6 @@ docker compose up
 
 References
 * https://github.com/splunk/splunk-app-examples/tree/master
+* https://dev.splunk.com/enterprise/docs/devtools/customsearchcommands/
+* https://dev.splunk.com/enterprise/docs/devtools/customsearchcommands/createcustomsearchcmd/
+* https://dev.splunk.com/enterprise/docs/devtools/customsearchcommands/customsearchcmdexamples/
